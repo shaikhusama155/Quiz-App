@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="sheet.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quiz Login</h1>
+        <ul>
+
+            <li>
+                <label for="username">Username:</label>
+                <input type="text" name="name" id="name">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <label for="username">password:</label>
+                <input type="password" name="paswd" id="paswd"></li>
+        </ul>
+        <button class="submit" id="submit" onclick="submitBtn()">Login</button>
+    </div>
+
+    <script>
+        function submitBtn(){
+            let userName = document.getElementById("name").value;
+            let password = document.getElementById("paswd").value;
+            if(password == "karachi125"){
+                window.location.href = "quiz.html"
+            }
+            else{
+                alert("Wrong password")
+            }
+        }
+    </script>
+</body>
+
+</html>
